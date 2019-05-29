@@ -16,7 +16,15 @@ public class FreightCar extends Car{
 		s.append(luggageQuantity);
 		s.append("\nLuggage weight: ");
 		s.append(luggageWeight);
-		s.append("kg\n\n");
+		s.append("kg\n");
 		return s.toString();
+	}
+
+	public int getPassengersCount(){
+		return 0;
+	}
+
+	public int getLuggageCount(){
+		return luggageQuantity;
 	}
 }

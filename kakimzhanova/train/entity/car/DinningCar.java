@@ -12,7 +12,15 @@ public class DinningCar extends Car{
 		s.append("Dinning Car");
 		s.append("\nDinning places: ");
 		s.append(places);
-		s.append("\n\n");
+		s.append("\n");
 		return s.toString();
+	}
+
+	public int getPassengersCount(){
+		return 0;
+	}
+
+	public int getLuggageCount(){
+		return 0;
 	}
 }

@@ -1,15 +1,12 @@
 package main02.kakimzhanova.train.entity.car;
 
-public class PassengerCar extends Car{
+public abstract class PassengerCar extends Car{
 	private int passengersQuantity;
 	private int handLuggageQuantity;
-	private CompartmentType type;
 
-	public PassengerCar(int passengersQuantity, int handLuggageQuantity, 
-						CompartmentType type){
+	public PassengerCar(int passengersQuantity, int handLuggageQuantity){
 		this.passengersQuantity = passengersQuantity;
 		this.handLuggageQuantity = handLuggageQuantity;
-		this.type = type;
 	}
 
 	public String toString(){
@@ -19,9 +16,15 @@ public class PassengerCar extends Car{
 		s.append(passengersQuantity);
 		s.append("\nHand luggage quantity: ");
 		s.append(handLuggageQuantity);
-		s.append("\nCompartment type: ");
-		s.append(type);
-		s.append("\n\n");
+		s.append("\n");
 		return s.toString();
+	}
+
+	public int getPassengersCount(){
+		return passengersQuantity;
+	}
+
+	public int getLuggageCount(){
+		return handLuggageQuantity;
 	}
 }

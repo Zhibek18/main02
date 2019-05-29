@@ -1,6 +1,6 @@
 package main02.kakimzhanova.train.entity.car;
 
-public class Car{ 
+public abstract class Car implements Cloneable{ 
 	static private int id = 1;
 	private int carId;
 
@@ -14,5 +14,17 @@ public class Car{
 		s.append(carId);
 		s.append("\n");
 		return s.toString();
+	}
+	public abstract int getPassengersCount();
+	public abstract int getLuggageCount();
+
+	public Car clone(){
+		Car copy = null;
+		try{
+			copy = (Car)super.clone();
+		}catch(CloneNotSupportedException e){
+			e.printStackTrace();
+		}
+		return copy;
 	}
 }
