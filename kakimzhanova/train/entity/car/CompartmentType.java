@@ -8,7 +8,7 @@ public enum CompartmentType{
 	int comfort;
 	int seatsNumber;
 	
-	CompartmentType(int name, int comfort, seatsNumber) {
+	CompartmentType(String name, int comfort, int seatsNumber) {
 		this.name = name;
 		this.comfort = comfort;
 		this.seatsNumber = seatsNumber;

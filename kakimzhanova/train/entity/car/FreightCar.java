@@ -11,11 +11,12 @@ public class FreightCar extends Car{
 
 	public String toString(){
 		StringBuffer s = new StringBuffer(super.toString());
-		s.append("Luggage quantity: ");
+		s.append("Freight car:");
+		s.append("\nLuggage quantity: ");
 		s.append(luggageQuantity);
 		s.append("\nLuggage weight: ");
 		s.append(luggageWeight);
-		s.append("\n");
+		s.append("kg\n\n");
 		return s.toString();
 	}
 }

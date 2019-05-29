@@ -9,9 +9,10 @@ public class DinningCar extends Car{
 
 	public String toString(){
 		StringBuffer s = new StringBuffer(super.toString());
-		s.append("Dinning places: ");
+		s.append("Dinning Car");
+		s.append("\nDinning places: ");
 		s.append(places);
-		s.append("\n");
+		s.append("\n\n");
 		return s.toString();
 	}
 }
