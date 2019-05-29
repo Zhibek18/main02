@@ -1,36 +1,35 @@
 package main02.kakimzhanova.train.entity;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 import main02.kakimzhanova.train.entity.car.*;
+import main02.kakimzhanova.train.util.IdGenerator;
 public class Train {//implements Cloneable{
-	static private int id = 1;
-	private int trainId;
+	private long trainId;
 	private List<Car> cars;
 
-	public Train(){
-		trainId = id++;
+	public Train() {
+		trainId = IdGenerator.generateTrainId();
 		cars = new ArrayList<>();
 	}
 
-	public Train(List<Car> cars){
-		trainId = id++;
+	public Train(List<Car> cars) {
+		trainId = IdGenerator.generateTrainId();
 		this.cars = cars;
 	}
 
-	public List<Car> getCars(){
+	public List<Car> getCars() {
 		return new ArrayList<Car>(cars);
 	}
-	public void addCar(Car car){
+	public void addCar(Car car) {
 		cars.add(car);
 	}
 
-	public String toString(){
+	public String toString() {
 		StringBuffer s = new StringBuffer("");
 		s.append("Train id: ");
 		s.append(trainId);
 		s.append("\n");
-		for (Car car : cars){
+		for (Car car : cars) {
 			s.append(car);
 			s.append("---------------------------\n");
 		}

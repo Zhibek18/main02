@@ -1,13 +1,13 @@
 package main02.kakimzhanova.train.entity.car;
 
-public class DinningCar extends Car{
+public class DinningCar extends Car {
 	private int places;
 
-	public DinningCar(int places){
+	public DinningCar(int places) {
 		this.places = places;
 	}
 
-	public String toString(){
+	public String toString() {
 		StringBuffer s = new StringBuffer(super.toString());
 		s.append("Dinning Car");
 		s.append("\nDinning places: ");
@@ -16,11 +16,11 @@ public class DinningCar extends Car{
 		return s.toString();
 	}
 
-	public int getPassengersCount(){
+	public int getPassengersCount() {
 		return 0;
 	}
 
-	public int getLuggageCount(){
+	public int getLuggageCount() {
 		return 0;
 	}
 }

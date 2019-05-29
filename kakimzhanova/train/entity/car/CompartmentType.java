@@ -1,6 +1,6 @@
 package main02.kakimzhanova.train.entity.car;
 
-public enum CompartmentType{
+public enum CompartmentType {
 	LUX("lux", 4, 2), BUSINESS("business", 3, 2), 
 	ECONOM("econom", 2, 4), OPEN("open", 1, 6);
 
@@ -14,7 +14,7 @@ public enum CompartmentType{
 		this.placesNumber = placesNumber;
 	}
 
-	public String toString(){
+	public String toString() {
 		StringBuffer s = new StringBuffer("");
 		s.append(name);
 		s.append("\n");

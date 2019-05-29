@@ -1,14 +1,14 @@
 package main02.kakimzhanova.train.entity.car;
+import main02.kakimzhanova.train.util.IdGenerator;
 
-public abstract class Car implements Cloneable{ 
-	static private int id = 1;
-	private int carId;
+public abstract class Car implements Cloneable { 
+	private long carId;
 
-	public Car(){
-		this.carId = id++;
+	public Car() {
+		this.carId = IdGenerator.generateCarId();
 	}
 
-	public String toString(){
+	public String toString() {
 		StringBuffer s = new StringBuffer("");
 		s.append("Car id: ");
 		s.append(carId);
@@ -18,11 +18,11 @@ public abstract class Car implements Cloneable{
 	public abstract int getPassengersCount();
 	public abstract int getLuggageCount();
 
-	public Car clone(){
+	public Car clone() {
 		Car copy = null;
-		try{
+		try {
 			copy = (Car)super.clone();
-		}catch(CloneNotSupportedException e){
+		}catch(CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
 		return copy;
