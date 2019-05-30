@@ -1,0 +1,13 @@
+kz/kakimzhanova/train/entity/car/SeatingCar.class
+kz/kakimzhanova/train/entity/car/PassengerCar.class
+kz/kakimzhanova/train/entity/car/DinningCar.class
+kz/kakimzhanova/train/action/TrainAction$1.class
+kz/kakimzhanova/train/entity/car/Car.class
+kz/kakimzhanova/train/action/TrainAction.class
+kz/kakimzhanova/train/util/IdGenerator.class
+kz/kakimzhanova/train/main/Runner.class
+kz/kakimzhanova/train/entity/car/CompartmentType.class
+kz/kakimzhanova/train/report/TrainReport.class
+kz/kakimzhanova/train/entity/Train.class
+kz/kakimzhanova/train/entity/car/SleepingCar.class
+kz/kakimzhanova/train/entity/car/FreightCar.class
